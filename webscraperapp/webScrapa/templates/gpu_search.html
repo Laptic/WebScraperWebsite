@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "base_template.html" %}
+{% block content %}
+
+<div class = "PartsContainer">
+<a href= "{% url 'MOTHERBOARD' %}" class = ATagButton> Motherboard </a>
+<a href= "{% url 'HOME' %}" class = ATagButton> Ram </a>
+<a href= "{% url 'GPU' %}" class = ATagButton> Reset </a>
+</div>
+
+<tbody>
+  {% for gpu in filter.qs %}
+  <tr>
+      <td>{{gpu.name}}</td>
+      <td> {{gpu.price}}</td>
+      <td> {{gpu.website}}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+{% endblock %}

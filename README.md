@@ -1,7 +1,5 @@
 # WebScraperWebsite
 Website to use with Webscraper
-# WebScraperWebsite
-Website to use with Webscraper.
 
 # Info
 Includes information about ram, motherboards and gpus from Amazon, New-egg and Microcenter.  
